@@ -33,12 +33,12 @@ BASE_APPS = [
 ]
 
 LOCAL_APPS = [
-
+    'apps.empleados',
 ]
 
 THRID_APPS = [
     'rest_framework',
-
+    'simple_history'
 ]
 
 INSTALLED_APPS = BASE_APPS + LOCAL_APPS + THRID_APPS
@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'simple_history.middleware.HistoryRequestMiddleware', # Detecta los cambios de cada empleado en la BDD
 ]
 
 ROOT_URLCONF = 'rest_oracle.urls'
@@ -105,6 +106,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+# AUTH_USER_MODEL = 'empleados.User'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

@@ -12,6 +12,6 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 # Indicamos dónde estarán nuestros archivos de configuración
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'rest_oracle.settings.local.py')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'rest_oracle.settings.local')
 
 application = get_wsgi_application()
