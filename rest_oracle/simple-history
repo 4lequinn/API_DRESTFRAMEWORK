@@ -1,0 +1,5 @@
+from simple_history.models import HistoricalRecords
+
+
+# a un modelo le debo asignar el campo 
+# historical = HistoricalRecords()

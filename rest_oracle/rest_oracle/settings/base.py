@@ -38,7 +38,7 @@ LOCAL_APPS = [
 
 THRID_APPS = [
     'rest_framework',
-    'simple_history'
+    'simple_history',
 ]
 
 INSTALLED_APPS = BASE_APPS + LOCAL_APPS + THRID_APPS
@@ -98,7 +98,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'ES'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 

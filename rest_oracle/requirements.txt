@@ -1,0 +1,5 @@
+# Permite ver el historial de toda la APP
+# python -m pip install django-simple-history=="3.0.0"
+
+# Permite conectarse con Oracle 
+cx_oracle
